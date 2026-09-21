@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asisten Guru AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 Asisten Guru AI</h1>
+    
+    <div class="card" id="ai-box">
+      <h3>Pesan Asisten Hari Ini:</h3>
+      <p id="ai-message">Sedang memuat data...</p>
+    </div>
+
+    <div class="card">
+      <h3>Jadwal Mengajar Hari Ini</h3>
+      <ul id="jadwal-list"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Update Histori Pembelajaran</h3>
+      <form id="form-histori">
+        <input type="text" id="idClass" placeholder="ID Kelas (contoh: KLS10A)" required><br>
+        <input type="text" id="materi" placeholder="Materi Saat Ini" required><br>
+        <input type="text" id="subMateri" placeholder="Sub Materi" required><br>
+        <textarea id="catatan" placeholder="Catatan Pembelajaran"></textarea><br>
+        <button type="submit">Simpan Sesi Mengajar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
